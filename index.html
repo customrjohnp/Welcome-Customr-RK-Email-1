@@ -383,53 +383,112 @@
 </tr>
 
 
-     <!-- Help / Store Finder panel — revised to match reference -->
 <tr>
-  <td align="center">
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;">
-      <tr>
-        <td bgcolor="#e6e9ed" style="background:#e6e9ed;">
-          <!-- top pad -->
-          <div style="height:22px; line-height:22px; font-size:0;">&nbsp;</div>
+  <td bgcolor="{variables.bgcontact}">
+    <!-- keep this table at 600 so the panel centers perfectly -->
+    <table cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+      <tr><td colspan="3" height="30" class="rh20"><div></div></td></tr>
 
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="10"></td>
+        <td>
+          <table cellpadding="0" cellspacing="0" width="100%">
             <tr>
-              <!-- Left column -->
-              <td width="300" valign="top" align="left" style="padding:0 24px; font-family:Arial,Helvetica,sans-serif; color:#000;">
-                <div style="font-weight:700; font-size:22px; line-height:1.3; margin:0 0 10px;">Looking for us?</div>
-                <div style="font-size:16px; line-height:1.6; margin:0 0 16px;">Find your nearest store</div>
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <!-- LEFT COL -->
+              <th align="left" class="vat fl">
+                <!-- 280 instead of 290 -->
+                <table cellpadding="0" cellspacing="0" width="280" class="ol280 fw">
+                  <e-optional name="Column 1 - Headline">
                   <tr>
-                    <td bgcolor="#000000" style="border-radius:8px;">
-                      <a href="#"
-                         style="display:inline-block; padding:12px 22px; font:700 16px/1 Arial,Helvetica,sans-serif; color:#fff; text-decoration:none;">
-                        Find a store
-                      </a>
+                    <td align="center" class="lh la3b mfs18">
+                      <font e-editable="textA_1" class="ff fs18 fc3 fwb mfs16">Looking for us?</font>
                     </td>
                   </tr>
-                </table>
-              </td>
+                  <tr><td height="10"></td></tr>
+                  </e-optional>
 
-              <!-- Right column -->
-              <td width="300" valign="top" align="left" style="padding:0 24px; font-family:Arial,Helvetica,sans-serif; color:#000;">
-                <div style="font-weight:700; font-size:22px; line-height:1.3; margin:0 0 10px;">Need help or advice?</div>
-                <div style="font-size:16px; line-height:1.7; margin:0;">
-                  <a href="#" style="color:#0066cc; text-decoration:underline;">Live Chat</a><br>
-                  Mon–Fri: 9am–9:30pm<br>
-                  Sat–Sun: 10am–5:30pm<br><br>
-                  <a href="#" style="color:#0066cc; text-decoration:underline;">Contact us Here</a>
-                </div>
-              </td>
+                  <e-optional name="Column 1 - Bodycopy">
+                  <tr>
+                    <td align="center" class="lh13p la3 mfs16">
+                      <font e-editable="textB_1" class="ff fs16 fc3 fwn mfs14">Find your nearest store</font>
+                    </td>
+                  </tr>
+                  </e-optional>
+
+                  <e-optional name="Column 1 - CTA">
+                  <tr><td height="15" class="s3"><div></div></td></tr>
+                  <tr>
+                    <td align="center">
+                      <table cellpadding="0" cellspacing="0" bgcolor="{variables.ctabg}"
+                             style="border:{variables.ctabw}px solid {variables.ctabc}; -webkit-border-radius:{variables.ctabr}px; -moz-border-radius:{variables.ctabr}px; border-radius:{variables.ctabr}px;">
+                        <tr>
+                          <td align="center" class="lhp1">
+                            <a href="https://www.robinskitchen.com.au/store-locator" e-editable="urlA_1" target="_blank"
+                               style="padding:12px 24px; font-size:{variables.ctafs}px; color:{variables.ctafc}; font-weight:normal; text-decoration:none; display:block;"
+                               class="cta {variables.ctamfs}">
+                              <font e-editable="link_textA_1"
+                                    style="font-family:{variables.ff}; font-size:{variables.ctafs}px; color:{variables.ctafc}; font-weight:{variables.ctafw}; text-decoration:{variables.ctatd}; font-style:{variables.ctafst};"
+                                    class="{variables.ctamfs}">Find a store</font>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  </e-optional>
+                </table>
+              </th>
+
+              <th width="20" class="fl {variables.mseph}"></th>
+
+              <!-- RIGHT COL -->
+              <th align="left" class="vat fl">
+                <!-- 280 instead of 290 -->
+                <table cellpadding="0" cellspacing="0" width="280" class="ol280 fw">
+                  <e-optional name="Column 2 - Headline">
+                  <tr>
+                    <td align="center" class="lh la1b mfs18">
+                      <font e-editable="textC_1" class="ff fs18 fc3 fwb mfs16">Need help or advice?</font>
+                    </td>
+                  </tr>
+                  <tr><td height="10"></td></tr>
+                  </e-optional>
+
+                  <e-optional name="Column 2 - Bodycopy">
+                  <tr>
+                    <td align="center" class="lh13p la3 mfs16">
+                      <font e-editable="textD_2" class="ff fs16 fc3 fwn mfs14">
+                        <a e-editable="urlD_1" href="https://www.robinskitchen.com.au" class="fc3 fwn tdn">
+                          <font e-editable="link_textD_1" class="ff fc3 tdu mfs14">Live Chat</font>
+                        </a><br>
+                        Mon-Fri: 9am-9:30pm<br>
+                        Sat-Sun: 10am-5:30pm<br><br>
+                        <a e-editable="urlD_2" href="https://support.robinskitchen.com.au/hc/en-us/requests/new" class="fc3 fwn tdn">
+                          <font e-editable="link_textD_2" class="ff fc3 tdu mfs14">Contact us Here</font>
+                        </a>
+                      </font>
+                    </td>
+                  </tr>
+                  </e-optional>
+                </table>
+              </th>
             </tr>
           </table>
-
-          <!-- bottom pad -->
-          <div style="height:22px; line-height:22px; font-size:0;">&nbsp;</div>
         </td>
+        <td width="10"></td>
       </tr>
+
+      <tr><td colspan="3" height="30" class="rh20"><div></div></td></tr>
     </table>
   </td>
 </tr>
+
+<e-optional name="Spacing">
+<tr>
+  <td bgcolor="{variables.bgcontent}" height="{variables.dseph}" class="{variables.mseph}"><div></div></td>
+</tr>
+</e-optional>
+
 
 
       <!-- Small gap before socials -->
